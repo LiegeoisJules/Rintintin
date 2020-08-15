@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+p, a {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contact-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1rem;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main div {
+  padding: 20px;
+}
+
+main .pres p {
+  margin: 10px 0;
+}
+
+main .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+form {
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+form article input, form article textarea {
+  display: block;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 20px 0;
+  padding: 5px 0;
+  width: 100%;
+}
+
+form article input::-webkit-input-placeholder, form article textarea::-webkit-input-placeholder {
+  font-family: 'Roboto', serif;
+}
+
+form article input:-ms-input-placeholder, form article textarea:-ms-input-placeholder {
+  font-family: 'Roboto', serif;
+}
+
+form article input::-ms-input-placeholder, form article textarea::-ms-input-placeholder {
+  font-family: 'Roboto', serif;
+}
+
+form article input::placeholder, form article textarea::placeholder {
+  font-family: 'Roboto', serif;
+}
+
+form article input[type=submit] {
+  background: white;
+  color: black;
+  border: none;
+  padding: 15px;
+}
+/*# sourceMappingURL=style.css.map */
